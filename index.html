@@ -4,24 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Keitlyn Lau | Front-end Developer</title>
 
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" type="image/x-icon" href="img/Asset 1.svg">
+    <style>
+        /* @media screen and (min-width: 576px) {
+            .nav_bar ul li:nth-child(1) a {
+                opacity: 1;
+                border-bottom: 5px #000 solid;
+                padding-bottom: 5px;
+                width: 225px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .nav_bar ul li:nth-child(1) a {
+                opacity: 1;
+                border-left: 5px #000 solid;
+                padding-left: 5px;
+                width: 225px;
+            }
+        } */
+
+        /* CREDITS
+        https://stackoverflow.com/questions/1417934/how-to-prevent-scrollbar-from-repositioning-web-page */
+        html {
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        /* JUST EXPLORATION AND TESTING */
+        /* * {
+            cursor: url(../img/cursor/normal.cur), pointer;
+        } */
+    </style>    
 </head>
 <body>
+  
+    <div class="tilt-effect"> <!--data-tilt-->
+        <img src="img/keitlyn39_A_beautiful_young_girl_Medium_brown_straight_hair_Pal_a63b7a01-1670-4.png" alt="" id="selfie">
+        <!-- <img src="img/gridpaper.png" alt="" id="bg_img"> -->
+        <div class="customBackground"></div>
+    <!-- </div> -->
 
-    <div class="cardboard">
-        <header>
-            <h1>Layout</h1>
-            <nav>
-                <ul>
-                    <li>Info</li>
-                    <li>Projects</li>
-                    <li>Connections</li>
-                </ul>
-            </nav>
+    <!-- <div id="blur_bg"></div> -->
+
+    <div id="container">
+        <header data-tilt> <!--data-tilt-->
+            <div class="flex_row">
+                <a href="index.html"><img src="img/Asset 1.svg" alt="" id="logo"></a>
+                <h5 class="major_mono"><span class="major_mono_color">K</span>eitlyn <span class="major_mono_color">L</span>au</h5>
+            </div>
+            <div class="nav_item">
+                <div>
+                    <a href="about.html"> About </a>
+                </div>
+            </div>
+            <div class="nav_item">
+                <div>
+                    <a href="webdev.html"> Web Dev </a>
+                </div>
+            </div>
+            <div class="nav_item">
+                <div>
+                    <a href="uiux.html"> UI/UX </a>
+                </div>
+            </div>
+            <div class="nav_item flex_row" data-tilt>
+                <a href="https://github.com/keitlyn-lau" class="github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/keitlyn-lau" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </header>
+
+        <div class="content">
+            <div>
+                <!-- <h1 id="portfolio_typing">Headings</h1> -->
+                <div class="container_row">
+                    <div>
+                        <div>
+                            <p class="portfolio_content">Hello World!</p>
+                            <h1 id="element"></h1>
+                            <p class="portfolio_content">I am passionate about creating captivating web experiences that seamlessly blend design and functionality. With expertise in HTML, CSS, and JavaScript, I specialize in crafting visually appealing and user-friendly websites. My goal is to leave a lasting impression through engaging digital experiences. Let’s embark on a journey of creativity and innovation together!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                <h1>Relationships between p, and span/em/strong</h1>
+                <div class="container_row">
+                    <div class="outer">
+                        <div class="inner">
+                            <p><code>Lorem Ipsum</code> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, praesentium. <code>Lorem Ipsum</code> tag, <code>Lorem Ipsum</code> tag, and <code>Lorem Ipsum</code> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eum?</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <footer>
+            <h6>&copy; 2023 / Designed & Developed by Keitlyn Lau / All Rights Reserved.</h6>
+            <!-- <div data-tilt>
+                <a href="https://github.com/keitlyn-lau" class="github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/keitlyn-lau" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div> -->
+        </footer>
     </div>
-    
+
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/338e6bcf77.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['I am <span id="my_first_name">Keitlyn</span>.', 'I am a <span id="my_first_name">Front-end Developer</span>.'],
+            typeSpeed: 75,
+            backSpeed: 40,
+            smartBackspace: false,
+            shuffle: true,
+            loop: true,
+            loopCount: Infinity,
+            showCursor: true,
+            cursorChar: '/',
+        });
+    </script>
+    <script type="text/javascript" src="js/nav_bar_effects.js"></script>
+
+    <!--    CREDITS
+            https://micku7zu.github.io/vanilla-tilt.js/ -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".tilt-effect"), {
+            max: 5,
+            speed: 1000,
+        });
+    </script>
 </body>
 </html>
