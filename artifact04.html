@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keitlyn Lau - Front-end Developer passionate about creating captivating web experiences. Specializing in HTML, CSS, and JavaScript. Let’s embark on a journey of creativity and innovation together!">
+    <meta name="keywords" content="Keitlyn Lau, Front-end Developer, HTML, CSS, JavaScript, Web Development, UI/UX Design">
+    <meta name="author" content="Keitlyn Lau">
+    <title>Keitlyn Lau | Front-end Developer</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="img/logo1.svg">  
+</head>
+<body>
+  
+    <div class="tilt-effect"> <!--data-tilt-->
+        <div class="customBackground"></div>
+    <!-- </div> -->
+
+        <div id="container">
+            <header data-tilt> <!--data-tilt-->
+                <div class="flex_row logo_container">
+                    <a href="index.html"><img src="img/logo1.svg" alt="" id="logo"></a>
+                    <h5 class="major_mono"><span class="major_mono_color">K</span>eitlyn <span class="major_mono_color">L</span>au</h5>
+                </div>
+                
+                <!-- Menu Icon -->
+                <div class="nav_menu_open">
+                    <a href="#" class="js_menu_open">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+
+                <nav class="nav_menu js_menu">
+                    <!-- Menu Close Icon -->
+                    <div class="nav_menu_close">
+                        <a href="#" class="js_menu_close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+
+                    <div class="nav_item">
+                        <div>
+                            <a href="webdev.html"> Web Dev </a>
+                        </div>
+                    </div>
+                    <div class="nav_item">
+                        <div>
+                            <a href="uiux.html"> UI/UX </a>
+                        </div>
+                    </div>
+                    <div class="nav_item">
+                        <div>
+                            <a href="about.html"> About </a>
+                        </div>
+                    </div>
+                    <div class="nav_item flex_row sm_container" data-tilt>
+                        <a href="https://github.com/keitlyn-lau" class="github"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/keitlyn-lau" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </nav>
+            </header>
+
+
+            <main class="artifacts__container">
+                <section>
+                    <h1>Weather Website</h1>
+                </section>
+                <section>
+                    <p class="project-description">
+                        Create a weather card website that allows users to simply check the weather for a specific location. The weasite displays the current weather conditions including temperature, description, humidity, and wind speed with a simple and easy-to-read layout.
+                    </p>
+                </section>
+                <section>
+                    <div class="screenshot">
+                        <img src="img/987.jpg" alt="">
+                    </div>
+                </section>
+                <section class="artifacts__intro">
+                    <h2>Technologies Used</h2>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript</p>
+                    <p>API</p>
+                </section>
+                <section class="artifacts__intro">
+                    <h2>Key Features</h2>
+                    <p>Responsive design for various screen sizes</p>
+                    <p>User-friendly interface with clear visuals</p>
+                    <p>Real-time weather data retrieval from OpenWeatherMap API</p>
+                    <p>Dynamically updates weather conditions and displays appropriate icons</p>
+                    <p>Error handling for invalid locations</p>
+                </section>
+                <section class="about__vertical">
+                    <h2>Live Demo</h2>
+                    <a href="https://weathercard.keitlynlau.ca/" target="_blank">Click to view</a>
+                </section>
+            </main>
+
+
+            <footer>
+                <h6>&copy; 2023 / Keitlyn Lau</h6>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/338e6bcf77.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/nav_bar_effects.js"></script>
+
+        <!--    CREDITS
+            https://micku7zu.github.io/vanilla-tilt.js/ -->
+            <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+            <script type="text/javascript">
+                VanillaTilt.init(document.querySelector(".tilt-effect"), {
+                    max: 5,
+                    speed: 1000,
+                });
+            </script>
+
+    <!-- Script for menu on small screen size -->
+    <script src="js/menu.js"></script>
+</body>
+</html>

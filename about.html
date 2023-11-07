@@ -4,129 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keitlyn Lau - Front-end Developer passionate about creating captivating web experiences. Specializing in HTML, CSS, and JavaScript. Let’s embark on a journey of creativity and innovation together!">
+    <meta name="keywords" content="Keitlyn Lau, Front-end Developer, HTML, CSS, JavaScript, Web Development, UI/UX Design">
+    <meta name="author" content="Keitlyn Lau">
     <title>Keitlyn Lau | Front-end Developer</title>
 
     <link rel="stylesheet" href="css/global.css">
-    <link rel="icon" type="image/x-icon" href="Asset 1.svg">
-    <style>
-        @media screen and (min-width: 576px) {
-            .nav_bar ul li:nth-child(1) a {
-                opacity: 1;
-                border-bottom: 5px #000 solid;
-                padding-bottom: 5px;
-                width: 225px;
-            }
-        }
-
-        @media screen and (max-width: 576px) {
-            .nav_bar ul li:nth-child(1) a {
-                opacity: 1;
-                border-left: 5px #000 solid;
-                padding-left: 5px;
-                width: 225px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="img/logo1.svg">  
 </head>
 <body>
-    
-    <div><img src="img/Artboard 1.png" alt="" id="bg_img"></div>
+  
+    <div class="tilt-effect"> <!--data-tilt-->
+        <div class="customBackground"></div>
+    <!-- </div> -->
 
-    <div id="container">
-        <header>
-            <div class="flex_row">
-                <a href="index.html"><img src="img/Asset 2.svg" alt="" id="logo"></a>
-                <h5 class="major_mono"><span class="major_mono_color">K</span>eitlyn <span class="major_mono_color">L</span>au</h5>
-            </div>
-            <div class="nav_item">
-                <div>
-                    <a href="about.html" style="padding: 0;"> About </a>
+        <div id="container">
+            <header data-tilt> <!--data-tilt-->
+                <div class="flex_row logo_container">
+                    <a href="index.html"><img src="img/logo1.svg" alt="" id="logo"></a>
+                    <h5 class="major_mono"><span class="major_mono_color">K</span>eitlyn <span class="major_mono_color">L</span>au</h5>
                 </div>
-            </div>
-            <div class="nav_item">
-                <div>
-                    <a href="webdev.html"> Web Dev </a>
+                
+                <!-- Menu Icon -->
+                <div class="nav_menu_open">
+                    <a href="#" class="js_menu_open">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
                 </div>
+
+                <nav class="nav_menu js_menu">
+                    <!-- Menu Close Icon -->
+                    <div class="nav_menu_close">
+                        <a href="#" class="js_menu_close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+
+                    <div class="nav_item">
+                        <div>
+                            <a href="webdev.html"> Web Dev </a>
+                        </div>
+                    </div>
+                    <div class="nav_item">
+                        <div>
+                            <a href="uiux.html"> UI/UX </a>
+                        </div>
+                    </div>
+                    <div class="nav_item">
+                        <div>
+                            <a href="about.html"> About </a>
+                        </div>
+                    </div>
+                    <div class="nav_item flex_row sm_container" data-tilt>
+                        <a href="https://github.com/keitlyn-lau" class="github"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/keitlyn-lau" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="image_container">
+                <img src="keitlyn39_rooftop_bar_Hayao_Miyazaki_style_animecore_beautiful__5e4198ac-a679-4ea2-b2a7-621dca621dcd.png" alt="" id="pic2">    
+                <img src="keitlyn39_None_bcadcbc5-b965-4d2f-a0ea-57a92a557a0b.jpg" alt="" id="pic1">
+                <img src="img/keitlyn39_A_beautiful_young_girl_Medium_brown_straight_hair_Pal_a63b7a01-1670-4.png" alt="" id="selfie">
             </div>
-            <div class="nav_item">
-                <div>
-                    <a href="uiux.html"> UI/UX </a>
-                </div>
-            </div>
-        </header>
 
+            <main class="about">
+                <section class="about__vertical">
+                    <h1>Hey, nice to meet you!</h1>
+                    <h1>I'm Keitlyn! >>></h1>
+                </section>
+                <section class="about__vertical about__content">    
+                    <p>I am currently a student in BCIT's New Media and Web Development program. I am particularly interested in front-end development and I am excited to expand my knowledge in software development in the future.</p>
+                    <h2>&lt;Interactive websites to Immersive designs&gt;</h2>
+                    <p>Growing up in Hong Kong, I was exposed to a lot of Japanese anime, K-pop videos, and Hollywood movies. These forms of media demonstrated to me the ability of visual storytelling to engage and captivate an audience. That's why I am all about creating websites that incorporate dynamic and interactive elements.</p>
+                    <h2>&lt;Problem Solving&gt;</h2>
+                    <p>I also enjoy tackling problems and ensuring user satisfaction. My approach involves delving deeply into the issue, asking "why" repeatedly, and studying it thoroughly. I strongly believe that persistence is crucial and that any challenge can be overcome. As Louis Zamperini famously stated, <q><em>To persevere, I think, is important for everybody. Don't Give Up, Don't Give In, There's Always an Answer to Everything.</em></q></p>
+                </section>
+                <section class="skills">
+                    <h2>&lt;Skills&gt;</h2>
+                    <div class="about__skills">
+                        <div class="about__skills_container">
+                            <h3>Web Development</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>SASS</li>
+                                <li>Wordpress</li>
+                                <li>Figma</li>
+                                <li>Bootstrap</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="about__skills_container">
+                            <h3>Adobe Suite</h3>
+                            <ul>
+                                <li>Photoshop</li>
+                                <li>Premiere</li>
+                                <li>After Effects</li>
+                                <li>Illustrator</li>
+                                <li>InDesign</li>
+                                <li>Audition</li>
+                                <li>Dimension</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="about__vertical">
+                    <h2>
+                        <p></p>
+                    </h2>
+                </section>
+            </main>
 
-        <main> <!-- this element is gonna be the scroll container -->
-            <section>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, possimus!</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam odit voluptatem beatae nam labore.</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, possimus!</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam odit voluptatem beatae nam labore.</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, possimus!</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam odit voluptatem beatae nam labore.</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, possimus!</p>
-            </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam odit voluptatem beatae nam labore.</p>
-            </section>
-        </main>
-
-
-        <div class="bottom_bar">
             <footer>
-                <h6>&copy; Keitlyn Lau 2023</h6>
+                <h6>&copy; 2023 / Keitlyn Lau</h6>
             </footer>
         </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['I am <span id="my_first_name">Keitlyn</span>.', 'I am a <span id="my_first_name">Front-end Developer</span>.'],
-            typeSpeed: 75,
-            backSpeed: 40,
-            smartBackspace: false,
-            shuffle: true,
-            loop: true,
-            loopCount: Infinity,
-            showCursor: true,
-            cursorChar: '/',
-        });
-    </script>
+    <script src="https://kit.fontawesome.com/338e6bcf77.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/nav_bar_effects.js"></script>
-    <script>
-        const scrollMain = document.querySelector('main');
 
-        scrollMain.addEventListener('wheel', (event) => {
-            // the scroll command starts by this
-            event.preventDefault();
-            scrollMain.scrollLeft += event.deltaY;
-        })
-    </script>
+    <!--    CREDITS
+            https://micku7zu.github.io/vanilla-tilt.js/ -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="js/tilt-custom.js"></script>
+
+    <!-- Script for menu on small screen size -->
+    <script src="js/menu.js"></script>
 </body>
 </html>
