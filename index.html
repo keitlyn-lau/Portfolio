@@ -15,9 +15,8 @@
 </head>
 <body>
   
-    <div class="tilt-effect"> <!--data-tilt-->
+    <div class="tilt-effect">
         <div class="customBackground"></div>
-    <!-- </div> -->
 
         <div id="container">
             <header data-tilt> <!--data-tilt-->
@@ -56,29 +55,26 @@
                             <a href="about.html"> About </a>
                         </div>
                     </div>
-                    <div class="nav_item flex_row sm_container" data-tilt>
+                    <div class="flex_row sm_container" data-tilt>
                         <a href="https://github.com/keitlyn-lau" class="github"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/keitlyn-lau" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </nav>
             </header>
 
-            <img src="img/artifact01-mockup-02.png" alt="" class="pic3">
-
-            <div class="content">
-                <div>
-                    <p id="index__greeting" >Hello World!</p>
+            <main>
+                <div class="index__greeting">
+                        <p>Hello World!</p>
+                        <h1 class="typing">I am <span id="element"></span></h1>
                 </div>
-                <div>
-                    <h1 id="element"></h1>
+                <div class="index__grid">
+                    <p class="index__introduction">I am passionate about creating captivating web experiences that seamlessly blend design and functionality. With expertise in HTML, CSS, and JavaScript, I specialize in crafting visually appealing and user-friendly websites. My goal is to leave a lasting impression through engaging digital experiences. Let’s embark on a journey of creativity and innovation together!</p>
+                    <img src="img/artifact03-mockup-all.png" alt="screenshots of faai3 cafe's landing page">
                 </div>
-                <div>
-                    <p id="index__introduction">I am passionate about creating captivating web experiences that seamlessly blend design and functionality. With expertise in HTML, CSS, and JavaScript, I specialize in crafting visually appealing and user-friendly websites. My goal is to leave a lasting impression through engaging digital experiences. Let’s embark on a journey of creativity and innovation together!</p>
-                </div>
-            </div>
+            </main>
 
             <footer>
-                <h6>&copy; 2023 / Keitlyn Lau</h6>
+                <h6>&copy; 2023 / Keitlyn Lau / All Rights Reserved.</h6>
             </footer>
         </div>
 
@@ -89,8 +85,8 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['I am <span id="my_first_name">Keitlyn</span>.', 'I am a <span id="my_first_name">Front-end Developer</span>.'],
-            typeSpeed: 75,
+            strings: ['<span class="my_first_name">Keitlyn</span>.', 'a <span id="my_first_name">Front-end Developer</span>.'],
+            typeSpeed: 85,
             backSpeed: 40,
             smartBackspace: false,
             shuffle: true,

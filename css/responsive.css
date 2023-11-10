@@ -1,14 +1,3 @@
-/*
-    Updated font size guideline after tested on big screens
-    320px -> 16px
-    768px -> 18px
-    1024px -> 19px
-    1280px -> 20px
-    1536px -> 21px
-    1920px -> 23px
-    2560px -> 25px
-*/
-
 /* XS */
 @media screen and (min-width: 1px) and (max-width: 576px) {
 
@@ -29,7 +18,7 @@
         header {
             display: flex;
             justify-content: space-between;
-            width: 85%;
+            /* width: 85%; */
             padding-top: 15%;
         }
         .nav_menu {
@@ -97,48 +86,57 @@
 
     /* BODY */
         #container {
-            width: 95%;
-        }
-
-        .pic3 {
-            position: relative;
-            max-width: 100vw;
-            height: auto;
-            right: 0;
-            bottom: 0;
-            padding-top: 2rem;
-        }
-
-        #element {
-            font-size: 2rem;
+            width: 100%;
         }
     /* BODY */
 
+    /* INDEX PAGE */
+    .index__grid {
+        grid-template-columns: 100%;
+    }
+    .typing {
+        font-size: 100%;
+    }
+    .typed-cursor {
+        font-size: 100%;
+    }
+    .index__introduction {
+        padding-right: 0%;
+        padding-bottom: 5%;
+    }
+    /* INDEX PAGE */
+
     /* PROJECT LIST */
         .project_list {
-            display: block;
+            grid-template-columns: 1fr;
             z-index: -1;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
     /* PROJECT LIST */
 
     /* ABOUT PAGE */
-        .about {
-            width: 100%;
+        .about__grid {
+            grid-template-columns: 100%;
         }
-        .image_container {
-            position: relative;
-            margin-bottom: 5%;
-            z-index: -1;
+        .about__portrait {
+            margin: 1rem 0;
         }
-        #selfie {
-            position: absolute;
+        .about__context {
+            margin-left: 0;
         }
-        #pic1 {
-            position: absolute;
+        .about__skills_flex {
+            flex-direction: column;
+            align-items: center;
         }
-        #pic2 {
-            position: relative;
-            left: 30%;
+        .about__skills_container {
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .about__skills_container ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
         }
     /* ABOUT PAGE */
 
@@ -160,6 +158,14 @@
 
         .mockup {
             padding: 5% 0;
+        }
+
+        .artifacts__flex {
+            flex-direction: column;
+        }
+        .artifacts__flex div {
+            text-align: left;
+            padding: 1rem 0;
         }
     /* ARTIFACT PAGE */
 
@@ -185,7 +191,7 @@
         header {
             display: flex;
             justify-content: space-between;
-            width: 75%;
+            /* width: 75%; */
         }
         .nav_menu {
             display: inline-block;
@@ -252,48 +258,57 @@
 
     /* BODY */
         #container {
-            width: 95%;
-        }
-
-        .pic3 {
-            position: relative;
-            max-width: 100vw;
-            height: auto;
-            right: 0;
-            bottom: 0;
-            padding-top: 2rem;
-        }
-
-        #element {
-            font-size: 2rem;
+            width: 100%;
         }
     /* BODY */
 
+    /* INDEX */
+    .index__grid {
+        grid-template-columns: 100%;
+    }
+    .typing {
+        font-size: 200%;
+    }
+    .typed-cursor {
+        font-size: 100%;
+    }
+    .index__introduction {
+        padding-right: 0%;
+        padding-bottom: 5%;
+    }
+    /* INDEX */
+
     /* PROJECT LIST */
         .project_list {
-            display: block;
+            grid-template-columns: 1fr;
             z-index: -1;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
     /* PROJECT LIST */
 
     /* ABOUT PAGE */
-        .about {
-            width: 100%;
+        .about__grid {
+            grid-template-columns: 100%;
         }
-        .image_container {
-            position: relative;
-            margin-bottom: 5%;
-            z-index: -1;
+        .about__portrait {
+            margin: 1rem 0;
         }
-        #selfie {
-            position: absolute;
+        .about__context {
+            margin-left: 0;
         }
-        #pic1 {
-            position: absolute;
+        .about__skills_flex {
+            flex-direction: column;
+            align-items: center;
         }
-        #pic2 {
-            position: relative;
-            left: 30%;
+        .about__skills_container {
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .about__skills_container ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
         }
     /* ABOUT PAGE */
 
@@ -315,6 +330,14 @@
 
         .mockup {
             padding: 5% 0;
+        }
+
+        .artifacts__flex {
+            flex-direction: column;
+        }
+        .artifacts__flex div {
+            text-align: left;
+            padding: 1rem 0;
         }
     /* ARTIFACT PAGE */
 
@@ -340,7 +363,6 @@
         header {
             display: flex;
             justify-content: space-between;
-            
         }
         .nav_menu {
             display: inline-block;
@@ -407,48 +429,57 @@
 
     /* BODY */
         #container {
-            width: 95%;
-        }
-
-        .pic3 {
-            position: relative;
-            max-width: 100vw;
-            height: auto;
-            right: 0;
-            bottom: 0;
-            padding-top: 2rem;
-        }
-
-        #element {
-            font-size: 2rem;
+            width: 100%;
         }
     /* BODY */
 
+    /* INDEX */
+    .index__grid {
+        grid-template-columns: 100%;
+    }
+    .typing {
+        font-size: 200%;
+    }
+    .typed-cursor {
+        font-size: 100%;
+    }
+    .index__introduction {
+        padding-right: 0%;
+        padding-bottom: 5%;
+    }
+    /* INDEX */
+
     /* PROJECT LIST */
         .project_list {
-            display: block;
+            grid-template-columns: 1fr 1fr;
             z-index: -1;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
     /* PROJECT LIST */
 
     /* ABOUT PAGE */
-        .about {
-            width: 100%;
+        .about__grid {
+            grid-template-columns: 100%;
         }
-        .image_container {
-            position: relative;
-            margin-bottom: 5%;
-            z-index: -1;
+        .about__portrait {
+            margin: 1rem 0;
         }
-        #selfie {
-            position: absolute;
+        .about__context {
+            margin-left: 0;
         }
-        #pic1 {
-            position: absolute;
+        .about__skills_flex {
+            flex-direction: column;
+            align-items: center;
         }
-        #pic2 {
-            position: relative;
-            left: 30%;
+        .about__skills_container {
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .about__skills_container ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 2rem;
         }
     /* ABOUT PAGE */
 
@@ -471,6 +502,14 @@
         .mockup {
             padding: 5% 0;
         }
+
+        .artifacts__flex {
+            flex-direction: column;
+        }
+        .artifacts__flex div {
+            text-align: left;
+            padding: 1rem 0;
+        }
     /* ARTIFACT PAGE */
 
 }
@@ -488,25 +527,23 @@
     /* HEADER BAR */
         header {
             grid-template-columns: minmax(auto, 35%) 1fr;
-            width: 75%;
+            /* width: 75%; */
         }
         #container {
-            width: 90%;
+            width: 100%;
         }
     /* HEADER BAR */
 
     /* ABOUT PAGE */
-    .about {
-        width: 45%;
-        margin-top: 5%;
-    }
+
     /* ABOUT PAGE */
 
     /* PROJECT LIST */
         .project_list {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             z-index: -1;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
         .project_list h2 {
             font-size: 1.4rem;
@@ -545,7 +582,7 @@
             padding: 20px;
         }
         #container {
-            width: 90%;
+            width: 100%;
         }
     /* HEADER BAR */
 
@@ -559,6 +596,9 @@
     /* PROJECT LIST */
         .project_list {
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            z-index: -1;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
         .project_list h2 {
             font-size: .65rem;
