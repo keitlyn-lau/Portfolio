@@ -67,8 +67,8 @@
             <main class="artifacts__container">
 
                 <section>
-                    <h1>Weather Website</h1>
-                    <p class="artifacts__brief">Create a weather card website that allows users to simply check the weather for a specific location. The website displays the current weather conditions, including temperature, description, humidity, and wind speed, with a simple and easy-to-read layout.</p>
+                    <h1>Weather Lite</h1>
+                    <p class="artifacts__brief">A web application showing an intuitive weather card </p>
                 </section>
 
                 <section class="artifacts__grid">
@@ -85,7 +85,7 @@
                     </div>
                     <div>
                         <h2>Live Demo</h2>
-                        <a href="https://weathercard.keitlynlau.ca/" target="_blank">Click to view</a>
+                        <div class="btn__container"><a href="https://weathercard.keitlynlau.ca/" target="_blank" class="btn">Click to view</a></div>
                     </div>
                     <div>
                         <h2>Duration</h2>
@@ -95,49 +95,40 @@
 
                 <section>
                     <div class="screenshot">
-                        <img src="img/987.jpg" alt="A screenshot of the landing page of the weather website">
+                        <img src="img/weatherlite_herobanner.jpg" alt="A screenshot of the landing page of the weather website">
                     </div>
                 </section>
 
                 <section>
                     <div>
                         <h2>Brainstorming</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sequi totam provident! Assumenda itaque similique nemo doloribus quis, veritatis praesentium adipisci alias labore dignissimos et.</p>
-                        <p>1. Responsive design for various screen sizes</p>
-                        <p>2. User-friendly interface with clear visuals</p>
-                        <p>3. Real-time weather data retrieval from the OpenWeatherMap API</p>
-                        <p>4. Dynamically updates weather conditions and displays appropriate icons</p>
-                        <p>5. Error handling for invalid locations</p>
-                    </div>
-                </section>
-
-                <section>
-                    <div>
-                        <h2>Wireframes</h2>
-                        <div>
-                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9btO5rkECqX2P3XVszjwtD%2FMDIA-1472-Assignment-2-Keitlyn-Lau(A01207144)%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DZ7J77NNfSlbFJ60h-1" allowfullscreen></iframe>
-                        </div>
+                        <p>The first step in the project was to design the user interface. The design was focused on simplicity and ease of use. The user is presented with a search box where they can enter a location. Upon clicking the search button, the application fetches the weather data for the entered location and displays it on the card. If the location entered is invalid, an error message is displayed.</p>
                     </div>
                 </section>
 
                 <section>
                     <div>
                         <h2>Code Example</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo aliquid expedita molestias molestiae dicta at quos, maxime error impedit officiis reprehenderit quas perspiciatis hic voluptatibus voluptatem in dolorum nesciunt laudantium?</p>
+                        <p>The HTML structure of the application is straightforward. It consists of a container div that holds the search box, weather box, weather details, and a not-found section. The CSS is used to style these elements and the JavaScript is used to fetch and display the weather data.</p>
+                        <p style="padding-top: .5rem;padding-bottom: .5rem;">The JavaScript code begins by selecting the necessary elements from the DOM. It then adds an event listener to the search button. When the button is clicked, the application fetches the weather data for the entered location using the OpenWeatherMap API. The fetched data is then used to update the weather box and weather details sections.</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="img/weatherlite__codes.png" alt="A screenshot of the landing page of the weather website">
                     </div>
                 </section>
 
                 <section>
                     <div>
                         <h2>Challenges</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, quisquam consequuntur. Molestias eligendi ab impedit autem nemo pariatur similique. Facere itaque dolores minus dicta nostrum ipsum accusantium quam, quo cupiditate quisquam necessitatibus mollitia, amet quasi iusto, tempora nihil illum ratione eius! Minus a ipsum eveniet incidunt id voluptatem similique aperiam.</p>
+                        <p>One of the main challenges in this project was handling the API response. The OpenWeatherMap API returns a lot of data, and not all of it is necessary for the weather card. It was important to only use the relevant data to avoid unnecessary complexity and potential errors.</p>
+                        <p style="padding-top: .5rem;padding-bottom: .5rem;">Another challenge was handling errors. The application needs to handle cases where the entered location is invalid or the API request fails. This was achieved by checking the API response for an error code and displaying an appropriate error message.</p>
                     </div>
                 </section>
 
                 <section>
                     <div>
                         <h2>Takeaways</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloribus corporis dolores, beatae ipsum, in nam quas facilis est voluptatibus quae exercitationem quis adipisci quam assumenda reiciendis. Sed reiciendis maxime ipsa tenetur qui numquam labore rerum at itaque quas, reprehenderit quibusdam distinctio, eveniet quia sequi dolorem unde ipsum dolor, voluptates possimus hic. Quos, eveniet laudantium.</p>
+                        <p>This project was a great opportunity to learn more about working with APIs, handling responses, and managing errors. It also reinforced the importance of good design and user experience in web applications. The project also served as a reminder of the power of JavaScript and how it can be used to create interactive and dynamic web applications.</p>
                     </div>
                 </section>
 
