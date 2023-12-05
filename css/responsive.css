@@ -163,6 +163,10 @@
         .artifacts__flex {
             flex-direction: column;
         }
+        .artifacts__grid {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
         .artifacts__flex div {
             text-align: left;
             padding: 1rem 0;
