@@ -123,6 +123,10 @@ section {
     margin: 0 auto;
     padding-bottom: 2rem;
 }
+section p {
+    padding-top: 1rem;
+}
+
 /* To have a consistent alignment, unite the width of header, main, and footer and #container. */
 
 
@@ -210,6 +214,19 @@ section {
 }
 .about__skills_container li {
     font-size: .95rem;
+}
+.content_card {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    padding: 5%;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+}
+.content_card h2 {
+    color: rgb(218, 160, 61);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }
 /* ABOUT PAGE */
 
@@ -460,19 +477,7 @@ p {
     padding-left: 10%;
     margin-top: 1%;
 }
-.artifacts__content_card {
-    display: flex;
-    flex-direction: column;
-    margin: 5% 0;
-    padding: 5%;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 25px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
-}
-.artifacts__content_card h2 {
-    color: rgb(218, 160, 61);
-    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
-}
+
 .blackMango {
     color: #DAA03D;
     text-shadow: 0 0 5px rgba(0, 0, 0, .2);
