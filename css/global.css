@@ -121,7 +121,7 @@ section {
     /* outline: 2px orchid solid; */
     /* width: 70%; */
     margin: 0 auto;
-    padding: 1rem 0;
+    padding-bottom: 2rem;
 }
 /* To have a consistent alignment, unite the width of header, main, and footer and #container. */
 
@@ -248,7 +248,7 @@ section {
     color: #333;
 }
 .project_list h2 {
-    font-size: .8rem;
+    font-size: 100%;
     font-weight: 700;
     text-shadow: 0 0 5px rgba(0, 0, 0, .2);
     margin: 10px 0 10px 0;
